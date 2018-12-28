@@ -1,23 +1,15 @@
 from turtle import *
 
-
-def draw_vertex(colour,x,y):          #This function draws the vertex at the given co-ordinates
+#This function draws the vertex at the given co-ordinates
+def draw_vertex(colour,x,y):
     up()               
     color(colour)
     setpos(x,y-5)
-    # fillcolor('red')
     down()
-    # begin_fill()
     pensize(1)
     circle(4)
-    # end_fill()
     s=str(round(x))+','+str(round(y))
     up()
-    # color('purple')
-    # setpos(x,y-22)
-    # down()
-    # write(s,align='center',font=("Arial",8, "normal"))
-    # up()
 
 def draw_base_station(colour,x1,y1,x2,y2,x3,y3,x,y):
 	begin_fill()
@@ -32,8 +24,8 @@ def draw_base_station(colour,x1,y1,x2,y2,x3,y3,x,y):
 	s='Base Station'
 	write(s,align='center',font=("Arial",8, "normal"))
 	up()	
-
-def draw_line(colour,x1,y1,x2,y2):      #This function draws the edge from one vertex to other with the help of co-ordinates given
+#This function draws the edge from one vertex to other with the help of co-ordinates given
+def draw_line(colour,x1,y1,x2,y2):
     up()
     color(colour)
     setpos(x1,y1)
@@ -48,7 +40,6 @@ def draw_grid(factor):
 	draw_line('blue',-50*factor,50*factor,-50*factor,-50*factor)
 	for i in range(0,100,20):
 		draw_line('blue',(-50+i)*factor,-50*factor,(-50+i)*factor,50*factor)
-	# draw_line(-30*factor,-50*factor,-30*factor,50*factor)
 	for i in range(0,100,20):
 		draw_line('blue',-50*factor,(-50+i)*factor,50*factor,(-50+i)*factor)
 
@@ -57,8 +48,3 @@ def draw_grid_without_cell(factor):
     draw_line('blue',50*factor,-50*factor,50*factor,50*factor)
     draw_line('blue',50*factor,50*factor,-50*factor,50*factor)
     draw_line('blue',-50*factor,50*factor,-50*factor,-50*factor)
-    # for i in range(0,100,20):
-    #     draw_line('blue',(-50+i)*factor,-50*factor,(-50+i)*factor,50*factor)
-    # # draw_line(-30*factor,-50*factor,-30*factor,50*factor)
-    # for i in range(0,100,20):
-    #     draw_line('blue',-50*factor,(-50+i)*factor,50*factor,(-50+i)*factor)

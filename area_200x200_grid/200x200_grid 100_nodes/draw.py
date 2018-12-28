@@ -1,6 +1,6 @@
 from turtle import *
 
-#This function draws the vertex at the given co-ordinates
+ #This function draws the vertex at the given co-ordinates
 def draw_vertex(colour,x,y):
     up()               
     color(colour)

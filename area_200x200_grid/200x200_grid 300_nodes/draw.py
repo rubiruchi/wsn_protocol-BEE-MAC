@@ -10,7 +10,7 @@ def draw_vertex(colour,x,y):
     circle(4)
     s=str(round(x))+','+str(round(y))
     up()
-    
+
 def draw_base_station(colour,x1,y1,x2,y2,x3,y3,x,y):
 	begin_fill()
 	draw_line('red',x1,y1,x2,y2)
@@ -24,6 +24,7 @@ def draw_base_station(colour,x1,y1,x2,y2,x3,y3,x,y):
 	s='Base Station'
 	write(s,align='center',font=("Arial",8, "normal"))
 	up()	
+
 #This function draws the edge from one vertex to other with the help of co-ordinates given
 def draw_line(colour,x1,y1,x2,y2):
     up()
